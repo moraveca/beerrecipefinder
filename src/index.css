@@ -11,3 +11,28 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
+
+.jumbotron {
+  background-image: url('https://thumbor.thedailymeal.com/sWdh15DF3BQ9lKfHC_jeLzSiZeU=/870x565/https://www.thedailymeal.com/sites/default/files/2018/02/13/iStock-854848732_0_0.jpg');
+  background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#search-form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+}
+
+.list-group{
+  margin: 10%
+}
+
+#beer-image {
+  max-height: 100%;
+  /* max-width: auto */
+}
+
+#intro-box {
+  margin: auto
+}

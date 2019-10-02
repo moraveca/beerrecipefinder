@@ -20,3 +20,8 @@
 .App-link {
   color: #09d3ac;
 }
+
+#beer-header {
+  float: right;
+  width: 25%
+}
