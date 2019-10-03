@@ -149,7 +149,7 @@ class Detail extends Component {
                 <div className="card-body">
                     <div className="card">
                         <h1 className="card-title text-center">Directions</h1>
-                        <p className="card-text">Mash at {this.state.mash[0]} {this.state.mash[1]}</p>
+                        <p className="card-text">You should do the mash at {this.state.mash[0]} {this.state.mash[1]}</p>
                         <p className="card-text">Fermentation: {this.state.fermentation[0]} {this.state.fermentation[1]}</p>
                         <p className="card-text">Attenuation Level: {this.state.attenuation}</p>
                         <p className="card-text">EBC: {this.state.ebc}</p>

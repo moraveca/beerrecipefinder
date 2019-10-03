@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import API from "../utils/API";
 
 
-class Books extends Component {
+class Homepage extends Component {
   state = {
     recipes: [],
     beerName: "",
@@ -57,7 +57,8 @@ class Books extends Component {
   render() {
     return (
       <>
-        <form id="search-form">
+        <form id="search-form"
+        onSubmit={this.handleFormSubmit}>
           <input
             value={this.state.beerName}
             onChange={this.handleInputChange}
@@ -65,8 +66,8 @@ class Books extends Component {
             placeholder="Beer Name"
           />
           <button
-            type="button" className="btn btn-info"
-            onClick={this.handleFormSubmit}
+            type="submit" className="btn btn-info"
+            // onClick={this.handleFormSubmit}
           >
             Search
           </button>
@@ -106,4 +107,4 @@ class Books extends Component {
   }
 }
 
-export default Books;
+export default Homepage;
