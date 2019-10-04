@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/beerrecipefinder/precache-manifest.34f38c6210004f73f8ac3e3a3c5b879e.js"
+  "/beerrecipefinder/precache-manifest.13992c3a7531497eae0bcfb0bf4de5fc.js"
 );
 
 self.addEventListener('message', (event) => {
