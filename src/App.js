@@ -1,12 +1,12 @@
 import React from 'react';
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import Homepage from "./pages/Homepage";
 import Detail from "./pages/Detail";
 import Header from "./components/Header"
 
 function App() {
   return (
-    <Router>
+    <HashRouter basename="/">
       <div>
         <Header />
         <Switch>
@@ -16,7 +16,7 @@ function App() {
           {/* <Route component={NoMatch} /> */}
         </Switch>
       </div>
-    </Router>
+    </HashRouter>
   );
 }
 
