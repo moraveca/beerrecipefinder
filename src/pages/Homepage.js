@@ -53,19 +53,20 @@ class Homepage extends Component {
     return (
       <>
         <form id="search-form"
-              onSubmit={this.loadRecipes}
+          onSubmit={this.loadRecipes}
         >
           <input
+            id="input-form"
             value={this.state.beerName}
             onChange={this.handleInputChange}
             name="beerName"
             placeholder="Beer Name"
           />
-
-            <button
-              type="submit"
-              className="btn btn-info">
-              Search
+          <button
+            id="search-button"
+            type="submit"
+            className="btn btn-secondary">
+            Search
           </button>
         </form>
         {this.state.recipes.length ? (

@@ -24,6 +24,13 @@ code {
   padding: 10px;
 }
 
+#input-form {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+
+}
+
 .list-group{
   margin: 10%
 }
@@ -35,4 +42,10 @@ code {
 
 #intro-box {
   margin: auto
+}
+
+#search-button {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 }
