@@ -82,7 +82,9 @@ class Homepage extends Component {
             ))}
           </div>
         ) : (
-            <h3>{this.state.noResults}</h3>
+            <div className="list-group">
+              <h2 className="mb-1">{this.state.noResults}</h2>
+            </div>
           )}
       </>
     );
