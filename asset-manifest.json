@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/beerrecipefinder/static/css/main.9073fdde.chunk.css",
-    "main.js": "/beerrecipefinder/static/js/main.d66d9bf7.chunk.js",
-    "main.js.map": "/beerrecipefinder/static/js/main.d66d9bf7.chunk.js.map",
+    "main.js": "/beerrecipefinder/static/js/main.832896c3.chunk.js",
+    "main.js.map": "/beerrecipefinder/static/js/main.832896c3.chunk.js.map",
     "runtime-main.js": "/beerrecipefinder/static/js/runtime-main.73ddeacb.js",
     "runtime-main.js.map": "/beerrecipefinder/static/js/runtime-main.73ddeacb.js.map",
     "static/js/2.17e9777b.chunk.js": "/beerrecipefinder/static/js/2.17e9777b.chunk.js",
     "static/js/2.17e9777b.chunk.js.map": "/beerrecipefinder/static/js/2.17e9777b.chunk.js.map",
     "index.html": "/beerrecipefinder/index.html",
-    "precache-manifest.7c27b5433a0ea87018ca6356babe1c18.js": "/beerrecipefinder/precache-manifest.7c27b5433a0ea87018ca6356babe1c18.js",
+    "precache-manifest.556b635f15ad22e68589b9fd4d2ae42f.js": "/beerrecipefinder/precache-manifest.556b635f15ad22e68589b9fd4d2ae42f.js",
     "service-worker.js": "/beerrecipefinder/service-worker.js",
     "static/css/main.9073fdde.chunk.css.map": "/beerrecipefinder/static/css/main.9073fdde.chunk.css.map"
   }

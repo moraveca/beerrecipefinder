@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4d5425d535908b3ae5627f065ac9445f",
+    "revision": "591b514c303a80b5e23b219bda4e1e6b",
     "url": "/beerrecipefinder/index.html"
   },
   {
-    "revision": "41ef7b011e0f09df68f2",
+    "revision": "81813a2a5dc4b8b69275",
     "url": "/beerrecipefinder/static/css/main.9073fdde.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/beerrecipefinder/static/js/2.17e9777b.chunk.js"
   },
   {
-    "revision": "41ef7b011e0f09df68f2",
-    "url": "/beerrecipefinder/static/js/main.d66d9bf7.chunk.js"
+    "revision": "81813a2a5dc4b8b69275",
+    "url": "/beerrecipefinder/static/js/main.832896c3.chunk.js"
   },
   {
     "revision": "3b6fd2435262d9c45ff7",
