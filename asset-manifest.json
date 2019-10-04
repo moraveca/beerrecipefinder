@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/beerrecipefinder/static/css/main.e4bc7f83.chunk.css",
+    "main.js": "/beerrecipefinder/static/js/main.f302398d.chunk.js",
+    "main.js.map": "/beerrecipefinder/static/js/main.f302398d.chunk.js.map",
+    "runtime-main.js": "/beerrecipefinder/static/js/runtime-main.73ddeacb.js",
+    "runtime-main.js.map": "/beerrecipefinder/static/js/runtime-main.73ddeacb.js.map",
+    "static/js/2.91baa7d1.chunk.js": "/beerrecipefinder/static/js/2.91baa7d1.chunk.js",
+    "static/js/2.91baa7d1.chunk.js.map": "/beerrecipefinder/static/js/2.91baa7d1.chunk.js.map",
+    "index.html": "/beerrecipefinder/index.html",
+    "precache-manifest.34f38c6210004f73f8ac3e3a3c5b879e.js": "/beerrecipefinder/precache-manifest.34f38c6210004f73f8ac3e3a3c5b879e.js",
+    "service-worker.js": "/beerrecipefinder/service-worker.js",
+    "static/css/main.e4bc7f83.chunk.css.map": "/beerrecipefinder/static/css/main.e4bc7f83.chunk.css.map"
+  }
+}
