@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-// import { Link } from "react-router-dom";
 import API from "../utils/API";
 
 
@@ -15,15 +14,13 @@ class Detail extends Component {
         boil: [],
         ebc: 0,
         fermentation: [],
-        twist: "No Twist",
+        twist: "",
         ph: 0,
         srm: 0,
         target_fg: 0,
         target_og: 0,
         volume: []
     };
-    // When this component mounts, grab the book with the _id of this.props.match.params.id
-    // e.g. localhost:3000/books/599dcb67f0f16317844583fc
     componentDidMount() {
         API.getRecipe(this.props.match.params.id)
             .then(res => {
@@ -44,7 +41,7 @@ class Detail extends Component {
                     target_og: this.state.recipe.target_og,
                     volume: [this.state.recipe.volume.value, this.state.recipe.volume.unit]
                 })
-                if(this.state.recipe.method.twist) {
+                if (this.state.recipe.method.twist) {
                     this.setState({
                         twist: this.state.recipe.method.twist
                     })
@@ -102,13 +99,12 @@ class Detail extends Component {
                                 <p className="card-text"><b>IBU: </b>{this.state.recipe.ibu}</p>
                                 <p className="card-text"><b>Description: </b>{this.state.recipe.description}</p>
                                 <p className="card-text"><b>Brewer's Tips:</b> {this.state.recipe.brewers_tips}</p>
-                                <p className="card-text"><b>Food Pairings:</b>
-                                    <ul>
-                                        {this.state.pairings.map(pairing => (
-                                            <li>{pairing}</li>
-                                        ))}
-                                    </ul>
-                                </p>
+                                <p className="card-text"><b>Food Pairings:</b></p>
+                                <ul>
+                                    {this.state.pairings.map((pairing, index) => (
+                                        <li key={index}>{pairing}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </div>
                     </div>
@@ -119,8 +115,8 @@ class Detail extends Component {
                         <div className="card-body">
                             <h3 className="card-title text-center">Hops</h3>
                             <ul className="list-group list-group-flush">
-                                {this.state.hops.map(hop => (
-                                    <li className="list-group-item">{hop.name} - {hop.amount.value} {hop.amount.unit}</li>
+                                {this.state.hops.map((hop, index) => (
+                                    <li className="list-group-item" key={index}>{hop.name} - {hop.amount.value} {hop.amount.unit}</li>
                                 ))}
                             </ul>
                         </div>
@@ -129,8 +125,8 @@ class Detail extends Component {
                         <div className="card-body">
                             <h3 className="card-title text-center">Malt</h3>
                             <ul className="list-group list-group-flush">
-                                {this.state.malts.map(malt => (
-                                    <li className="list-group-item">{malt.name} - {malt.amount.value} {malt.amount.unit}</li>
+                                {this.state.malts.map((malt, index) => (
+                                    <li className="list-group-item" key={index}>{malt.name} - {malt.amount.value} {malt.amount.unit}</li>
                                 ))}
                             </ul>
                         </div>
@@ -147,26 +143,24 @@ class Detail extends Component {
                 </div>
 
                 <div className="card-body">
-                    <div className="card">
-                        <h1 className="card-title text-center">Directions</h1>
-                        <p className="card-text">You should do the mash at {this.state.mash[0]} {this.state.mash[1]}</p>
-                        <p className="card-text">Fermentation: {this.state.fermentation[0]} {this.state.fermentation[1]}</p>
-                        <p className="card-text">Attenuation Level: {this.state.attenuation}</p>
-                        <p className="card-text">EBC: {this.state.ebc}</p>
-                        <p className="card-text">Boil Volume: {this.state.boil[0]} {this.state.boil[1]}</p>
-                        <p className="card-text">Twist: {this.state.twist}</p>
-                        <p className="card-text">ph: {this.state.ph}</p>
-                        <p className="card-text">EBC: {this.state.ebc}</p>
-                        <p className="card-text">SRM: {this.state.srm}</p>
-                        <p className="card-text">Target OG: {this.state.target_og}</p>
-                        <p className="card-text">Target FG: {this.state.target_fg}</p>
-                        <p className="card-text">Volume: {this.state.volume[0]} {this.state.volume[1]}</p>
+                    <div className="card border-0">
+                        <h1 className="card-title text-center">Methods</h1>
+                        <p className="card-text"><b>Batch Size:</b> {this.state.volume[0]} {this.state.volume[1]}</p>
+                        <p className="card-text"><b>Boil Volume:</b> {this.state.boil[0]} {this.state.boil[1]}</p>
+                        <p className="card-text"><b>OG:</b> {this.state.target_og}</p>
+                        <p className="card-text"><b>FG:</b> {this.state.target_fg}</p>
+                        <p className="card-text"><b>Mash temperature:</b> {this.state.mash[0]}&#176; {this.state.mash[1]}</p>
+                        <p className="card-text"><b>Fermentation temperature:</b> {this.state.fermentation[0]}&#176; {this.state.fermentation[1]}</p>
+                        <p className="card-text"><b>Attenuation Level:</b> {this.state.attenuation}</p>
+                        {this.state.twist.length ? (<p className="card-text"><b>Recipe Twist:</b> {this.state.twist}</p>) : (<></>)}
+
+                        {/* <p className="card-text"><b>ph:</b> {this.state.ph}</p> */}
+                        {/* <p className="card-text">EBC: {this.state.ebc}</p> */}
+                        {/* <p className="card-text">SRM: {this.state.srm}</p> */}
 
 
                     </div>
                 </div>
-
-
             </>
         );
     }

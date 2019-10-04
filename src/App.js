@@ -11,6 +11,7 @@ function App() {
         <Header />
         <Switch>
           <Route exact path="/" component={Homepage} />
+          {/* <Route exact path="/search/:query" component={Homepage} /> */}
           <Route exact path="/recipes/:id" component={Detail} />
           {/* <Route component={NoMatch} /> */}
         </Switch>
